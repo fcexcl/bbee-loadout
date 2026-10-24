@@ -1,0 +1,2246 @@
+{
+ "火": {
+  "branches": [
+   {
+    "name": "燃烧",
+    "t1": [
+     "技能燃烧",
+     "普攻燃烧",
+     "冲刺燃烧"
+    ],
+    "t2": [
+     "持久燃烧",
+     "聚火成炎",
+     "燃烧引燃",
+     "火焰漫步"
+    ],
+    "t3": [
+     "强效燃烧"
+    ],
+    "duals": [
+     {
+      "name": "燃烧爆弹",
+      "prereq": [
+       [
+        "普攻燃烧",
+        "技能燃烧",
+        "冲刺燃烧"
+       ]
+      ],
+      "pos": [
+       "冲刺",
+       "普攻",
+       "技能"
+      ],
+      "effect_element": "火",
+      "effect_branch": "火弹",
+      "need_t3": true
+     }
+    ]
+   },
+   {
+    "name": "火弹",
+    "t1": [
+     "技能火弹",
+     "传承技火弹"
+    ],
+    "t2": [
+     "集中火弹",
+     "火弹弹射",
+     "火弹强化"
+    ],
+    "t3": [
+     "多重火弹"
+    ],
+    "duals": [
+     {
+      "name": "爆燃火弹",
+      "prereq": [
+       [
+        "普攻燃烧",
+        "技能燃烧",
+        "冲刺燃烧"
+       ],
+       [
+        "技能火弹",
+        "传承技火弹"
+       ]
+      ],
+      "pos": [
+       "技能",
+       "传承"
+      ],
+      "effect_element": "火",
+      "effect_branch": "火弹",
+      "need_t3": true
+     },
+     {
+      "name": "火弹火精灵",
+      "prereq": [
+       [
+        "技能火弹",
+        "传承技火弹"
+       ]
+      ],
+      "pos": [
+       "技能",
+       "传承"
+      ],
+      "effect_element": "火",
+      "effect_branch": "火精灵",
+      "need_t3": true
+     },
+     {
+      "name": "火弹闪光",
+      "prereq": [
+       [
+        "技能火弹",
+        "传承技火弹"
+       ]
+      ],
+      "pos": [
+       "技能"
+      ],
+      "effect_element": "光",
+      "effect_branch": "闪光",
+      "need_t3": true
+     }
+    ]
+   },
+   {
+    "name": "火环",
+    "t1": [
+     "传承技火环"
+    ],
+    "t2": [
+     "大型火环",
+     "变形火环",
+     "受击火环"
+    ],
+    "t3": [
+     "双发火环"
+    ],
+    "duals": [
+     {
+      "name": "焚弹火环",
+      "prereq": [
+       [
+        "召唤刃环"
+       ],
+       [
+        "传承技火环"
+       ]
+      ],
+      "pos": [
+       "传承"
+      ],
+      "effect_element": "火",
+      "effect_branch": "火环",
+      "need_t3": true
+     },
+     {
+      "name": "火环燃烧",
+      "prereq": [
+       [
+        "传承技火环"
+       ]
+      ],
+      "pos": [
+       "传承"
+      ],
+      "effect_element": "火",
+      "effect_branch": "燃烧",
+      "need_t3": true
+     }
+    ]
+   },
+   {
+    "name": "地雷",
+    "t1": [
+     "放置地雷"
+    ],
+    "t2": [
+     "地雷强化",
+     "额外地雷",
+     "地雷溅射"
+    ],
+    "t3": [
+     "高效布雷"
+    ],
+    "duals": [
+     {
+      "name": "地雷火焰",
+      "prereq": [
+       [
+        "冲刺燃烧",
+        "普攻燃烧",
+        "技能燃烧"
+       ],
+       [
+        "放置地雷"
+       ]
+      ],
+      "pos": [
+       "召唤"
+      ],
+      "effect_element": "火",
+      "effect_branch": "地雷",
+      "need_t3": true
+     },
+     {
+      "name": "地雷闪光",
+      "prereq": [
+       [
+        "传承技闪光"
+       ],
+       [
+        "放置地雷"
+       ]
+      ],
+      "pos": [
+       "召唤"
+      ],
+      "effect_element": "火",
+      "effect_branch": "地雷",
+      "need_t3": true
+     },
+     {
+      "name": "冰爆地雷",
+      "prereq": [
+       [
+        "放置地雷"
+       ]
+      ],
+      "pos": [
+       "召唤"
+      ],
+      "effect_element": "冰",
+      "effect_branch": "冰雹",
+      "need_t3": true
+     },
+     {
+      "name": "地雷毒液",
+      "prereq": [
+       [
+        "放置地雷"
+       ]
+      ],
+      "pos": [
+       "召唤"
+      ],
+      "effect_element": "毒",
+      "effect_branch": "毒液",
+      "need_t3": true
+     }
+    ]
+   },
+   {
+    "name": "火精灵",
+    "t1": [
+     "火精灵助战"
+    ],
+    "t2": [
+     "火精灵强化",
+     "火精灵连击",
+     "快速分裂"
+    ],
+    "t3": [
+     "持久分裂"
+    ],
+    "duals": [
+     {
+      "name": "火精灵引爆",
+      "prereq": [
+       [
+        "冲刺燃烧",
+        "技能燃烧"
+       ],
+       [
+        "火精灵助战"
+       ]
+      ],
+      "pos": [
+       "普攻"
+      ],
+      "effect_element": "火",
+      "effect_branch": "火精灵",
+      "need_t3": true
+     },
+     {
+      "name": "火精灵弹跳",
+      "prereq": [
+       [
+        "电闪雷鸣",
+        "技能闪电"
+       ],
+       [
+        "火精灵助战"
+       ]
+      ],
+      "pos": [
+       "普攻"
+      ],
+      "effect_element": "火",
+      "effect_branch": "火精灵",
+      "need_t3": true
+     }
+    ]
+   }
+  ]
+ },
+ "冰": {
+  "branches": [
+   {
+    "name": "寒冷",
+    "t1": [
+     "普攻寒冷",
+     "技能寒冷"
+    ],
+    "t2": [
+     "寒气爆发",
+     "聚寒成冰"
+    ],
+    "t3": [
+     "冰霜爆破",
+     "强力破冰"
+    ],
+    "t3_req": {
+     "冰霜爆破": [
+      "寒气爆发"
+     ],
+     "强力破冰": [
+      "聚寒成冰"
+     ]
+    },
+    "duals": [
+     {
+      "name": "冰霜脉冲",
+      "prereq": [
+       [
+        "传承技感电",
+        "技能感电"
+       ],
+       [
+        "普攻寒冷",
+        "技能寒冷"
+       ],
+       [
+        "寒气爆发"
+       ]
+      ],
+      "pos": [
+       "普攻",
+       "技能"
+      ],
+      "effect_element": "冰",
+      "effect_branch": "寒冷",
+      "need_t3": true
+     },
+     {
+      "name": "冰冻冰锥",
+      "prereq": [
+       [
+        "聚寒成冰"
+       ],
+       [
+        "普攻寒冷",
+        "技能寒冷"
+       ]
+      ],
+      "pos": [
+       "普攻",
+       "技能"
+      ],
+      "effect_element": "冰",
+      "effect_branch": "冰锥",
+      "need_t3": true
+     },
+     {
+      "name": "冰击化剑",
+      "prereq": [
+       [
+        "寒气爆发"
+       ],
+       [
+        "普攻寒冷",
+        "技能寒冷"
+       ]
+      ],
+      "pos": [
+       "技能"
+      ],
+      "effect_element": "冰",
+      "effect_branch": "冰剑",
+      "need_t3": true
+     }
+    ]
+   },
+   {
+    "name": "冰锥",
+    "t1": [
+     "冲刺冰锥",
+     "传承技冰锥"
+    ],
+    "t2": [
+     "冰锥强化",
+     "闪避冰锥",
+     "受击冰锥"
+    ],
+    "t3": [
+     "随机冰锥"
+    ],
+    "duals": [
+     {
+      "name": "冰锥极寒",
+      "prereq": [
+       [
+        "冲刺冰锥",
+        "传承技冰锥"
+       ]
+      ],
+      "pos": [
+       "冲刺",
+       "传承"
+      ],
+      "effect_element": "冰",
+      "effect_branch": "寒冷",
+      "need_t3": true
+     }
+    ]
+   },
+   {
+    "name": "冰刺",
+    "t1": [
+     "召唤冰刺"
+    ],
+    "t2": [
+     "冰刺强化",
+     "精准冰刺",
+     "冰刺穿透"
+    ],
+    "t3": [
+     "多重冰刺"
+    ],
+    "duals": [
+     {
+      "name": "无尽冰刺",
+      "prereq": [
+       [
+        "聚寒成冰"
+       ],
+       [
+        "召唤冰刺"
+       ]
+      ],
+      "pos": [
+       "召唤"
+      ],
+      "effect_element": "冰",
+      "effect_branch": "冰刺",
+      "need_t3": true
+     },
+     {
+      "name": "冰刺再生",
+      "prereq": [
+       [
+        "寒气爆发"
+       ],
+       [
+        "召唤冰刺"
+       ]
+      ],
+      "pos": [
+       "召唤"
+      ],
+      "effect_element": "冰",
+      "effect_branch": "冰刺",
+      "need_t3": true
+     },
+     {
+      "name": "冰刺标记",
+      "prereq": [
+       [
+        "召唤冰刺"
+       ],
+       [
+        "圣光标记"
+       ]
+      ],
+      "pos": [
+       "召唤"
+      ],
+      "effect_element": "光",
+      "effect_branch": "圣光标记",
+      "need_t3": true
+     }
+    ]
+   },
+   {
+    "name": "冰雹",
+    "t1": [
+     "技能冰雹",
+     "传承技冰雹"
+    ],
+    "t2": [
+     "广域冰雹",
+     "冰雹频率",
+     "持久冰雹"
+    ],
+    "t3": [
+     "大型冰雹"
+    ],
+    "duals": [
+     {
+      "name": "冰落光阵",
+      "prereq": [
+       [
+        "召唤光阵"
+       ],
+       [
+        "技能冰雹",
+        "传承技冰雹"
+       ]
+      ],
+      "pos": [
+       "技能",
+       "传承"
+      ],
+      "effect_element": "冰",
+      "effect_branch": "冰雹",
+      "need_t3": true
+     },
+     {
+      "name": "冰爆锥体",
+      "prereq": [
+       [
+        "技能冰雹",
+        "传承技冰雹"
+       ]
+      ],
+      "pos": [
+       "技能",
+       "传承"
+      ],
+      "effect_element": "冰",
+      "effect_branch": "冰锥",
+      "need_t3": true
+     },
+     {
+      "name": "雹云冰刺",
+      "prereq": [
+       [
+        "技能冰雹",
+        "传承技冰雹"
+       ]
+      ],
+      "pos": [
+       "技能",
+       "传承"
+      ],
+      "effect_element": "冰",
+      "effect_branch": "冰刺",
+      "need_t3": true
+     }
+    ]
+   },
+   {
+    "name": "冰剑",
+    "t1": [
+     "玄冰剑刃"
+    ],
+    "t2": [
+     "速凝玄冰",
+     "玄冰剑气",
+     "玄冰连斩"
+    ],
+    "t3": [
+     "玄冰巨剑"
+    ],
+    "duals": [
+     {
+      "name": "冰剑刺击",
+      "prereq": [
+       [
+        "冲刺飞剑"
+       ],
+       [
+        "玄冰剑刃"
+       ]
+      ],
+      "pos": [
+       "普攻"
+      ],
+      "effect_element": "冰",
+      "effect_branch": "冰剑",
+      "need_t3": true
+     },
+     {
+      "name": "玄冰凝域",
+      "prereq": [
+       [
+        "玄冰剑刃"
+       ]
+      ],
+      "pos": [
+       "普攻"
+      ],
+      "effect_element": "冰",
+      "effect_branch": "寒冷",
+      "need_t3": true
+     },
+     {
+      "name": "冰影双剑",
+      "prereq": [
+       [
+        "玄冰剑刃"
+       ]
+      ],
+      "pos": [
+       "普攻"
+      ],
+      "effect_element": "暗",
+      "effect_branch": "影子",
+      "need_t3": true
+     }
+    ]
+   }
+  ]
+ },
+ "电": {
+  "branches": [
+   {
+    "name": "感电",
+    "t1": [
+     "技能感电",
+     "传承技感电"
+    ],
+    "t2": [
+     "脉冲强化",
+     "大型脉冲",
+     "脉冲麻痹"
+    ],
+    "t3": [
+     "脉冲感电"
+    ],
+    "duals": [
+     {
+      "name": "感电电球",
+      "prereq": [
+       [
+        "技能感电",
+        "传承技感电"
+       ]
+      ],
+      "pos": [
+       "技能",
+       "传承"
+      ],
+      "effect_element": "电",
+      "effect_branch": "电球",
+      "need_t3": true
+     }
+    ]
+   },
+   {
+    "name": "闪电链",
+    "t1": [
+     "普攻闪电",
+     "电闪雷鸣",
+     "技能闪电"
+    ],
+    "t2": [
+     "闪电过载",
+     "闪电强化",
+     "闪电弹射"
+    ],
+    "t3": [
+     "闪电延伸"
+    ],
+    "duals": [
+     {
+      "name": "雷云火弹",
+      "prereq": [
+       [
+        "电闪雷鸣"
+       ]
+      ],
+      "pos": [
+       "传承"
+      ],
+      "effect_element": "火",
+      "effect_branch": "火弹",
+      "need_t3": true
+     },
+     {
+      "name": "冰雷云雾",
+      "prereq": [
+       [
+        "电闪雷鸣"
+       ]
+      ],
+      "pos": [
+       "传承"
+      ],
+      "effect_element": "冰",
+      "effect_branch": "冰雹",
+      "need_t3": true
+     },
+     {
+      "name": "闪电感电",
+      "prereq": [
+       [
+        "普攻闪电",
+        "电闪雷鸣",
+        "技能闪电"
+       ],
+       [
+        "技能感电"
+       ]
+      ],
+      "pos": [
+       "普攻",
+       "传承",
+       "技能"
+      ],
+      "effect_element": "电",
+      "effect_branch": "感电",
+      "need_t3": true
+     },
+     {
+      "name": "电解化毒",
+      "prereq": [
+       [
+        "普攻闪电",
+        "电闪雷鸣",
+        "技能闪电"
+       ]
+      ],
+      "pos": [
+       "普攻",
+       "传承",
+       "技能"
+      ],
+      "effect_element": "毒",
+      "effect_branch": "中毒",
+      "need_t3": true
+     }
+    ]
+   },
+   {
+    "name": "落雷",
+    "t1": [
+     "冲刺落雷"
+    ],
+    "t2": [
+     "受击落雷",
+     "闪避落雷",
+     "落雷强化",
+     "落雷麻痹"
+    ],
+    "t3": [
+     "双重落雷"
+    ],
+    "duals": [
+     {
+      "name": "追踪落雷",
+      "prereq": [
+       [
+        "传承技感电",
+        "技能感电"
+       ],
+       [
+        "冲刺落雷"
+       ]
+      ],
+      "pos": [
+       "冲刺"
+      ],
+      "effect_element": "电",
+      "effect_branch": "落雷",
+      "need_t3": true
+     },
+     {
+      "name": "落雷光枪",
+      "prereq": [
+       [
+        "冲刺落雷"
+       ]
+      ],
+      "pos": [
+       "冲刺"
+      ],
+      "effect_element": "光",
+      "effect_branch": "光枪",
+      "need_t3": true
+     },
+     {
+      "name": "落雷飞刃",
+      "prereq": [
+       [
+        "冲刺落雷"
+       ]
+      ],
+      "pos": [
+       "冲刺"
+      ],
+      "effect_element": "刃",
+      "effect_branch": "飞刃",
+      "need_t3": true
+     }
+    ]
+   },
+   {
+    "name": "电球",
+    "t1": [
+     "环绕电球"
+    ],
+    "t2": [
+     "大型电球",
+     "持久电球",
+     "扩张电球"
+    ],
+    "t3": [
+     "密集电球"
+    ],
+    "duals": [
+     {
+      "name": "电球发射",
+      "prereq": [
+       [
+        "技能火弹",
+        "传承技火弹"
+       ],
+       [
+        "环绕电球"
+       ]
+      ],
+      "pos": [
+       "召唤"
+      ],
+      "effect_element": "电",
+      "effect_branch": "电球",
+      "need_t3": true
+     },
+     {
+      "name": "影子电球",
+      "prereq": [
+       [
+        "冲刺影子"
+       ],
+       [
+        "环绕电球"
+       ]
+      ],
+      "pos": [
+       "召唤"
+      ],
+      "effect_element": "电",
+      "effect_branch": "电球",
+      "need_t3": true
+     },
+     {
+      "name": "电球闪电",
+      "prereq": [
+       [
+        "环绕电球"
+       ]
+      ],
+      "pos": [
+       "召唤"
+      ],
+      "effect_element": "电",
+      "effect_branch": "闪电链",
+      "need_t3": true
+     },
+     {
+      "name": "电球落雷",
+      "prereq": [
+       [
+        "环绕电球"
+       ]
+      ],
+      "pos": [
+       "召唤"
+      ],
+      "effect_element": "电",
+      "effect_branch": "落雷",
+      "need_t3": true
+     }
+    ]
+   },
+   {
+    "name": "电桩",
+    "t1": [
+     "传承技电桩"
+    ],
+    "t2": [
+     "持久电桩",
+     "超载电桩",
+     "电桩吸附"
+    ],
+    "t3": [
+     "大型电桩"
+    ],
+    "duals": [
+     {
+      "name": "电桩链接",
+      "prereq": [
+       [
+        "普攻闪电",
+        "电闪雷鸣",
+        "技能闪电"
+       ],
+       [
+        "传承技电桩"
+       ]
+      ],
+      "pos": [
+       "传承"
+      ],
+      "effect_element": "电",
+      "effect_branch": "电桩",
+      "need_t3": true
+     },
+     {
+      "name": "脉冲电桩",
+      "prereq": [
+       [
+        "传承技电桩"
+       ]
+      ],
+      "pos": [
+       "传承"
+      ],
+      "effect_element": "电",
+      "effect_branch": "感电",
+      "need_t3": true
+     },
+     {
+      "name": "传导电桩",
+      "prereq": [
+       [
+        "传承技电桩"
+       ]
+      ],
+      "pos": [
+       "传承"
+      ],
+      "effect_element": "电",
+      "effect_branch": "电球",
+      "need_t3": true
+     },
+     {
+      "name": "影链电桩",
+      "prereq": [
+       [
+        "传承技电桩"
+       ],
+       [
+        "普攻影标"
+       ]
+      ],
+      "pos": [
+       "传承"
+      ],
+      "effect_element": "暗",
+      "effect_branch": "暗影标记",
+      "need_t3": true
+     }
+    ]
+   }
+  ]
+ },
+ "毒": {
+  "branches": [
+   {
+    "name": "中毒",
+    "t1": [
+     "普攻淬毒",
+     "技能毒环"
+    ],
+    "t2": [
+     "受击毒雾",
+     "毒素污染",
+     "强效中毒",
+     "毒素扩散",
+     "受击毒环"
+    ],
+    "t3": [
+     "急性中毒"
+    ],
+    "duals": [
+     {
+      "name": "寒冰毒雾",
+      "prereq": [
+       [
+        "普攻淬毒"
+       ]
+      ],
+      "pos": [
+       "普攻"
+      ],
+      "effect_element": "冰",
+      "effect_branch": "寒冷",
+      "need_t3": true
+     },
+     {
+      "name": "中毒毒弹",
+      "prereq": [
+       [
+        "普攻淬毒",
+        "技能毒环"
+       ]
+      ],
+      "pos": [
+       "普攻",
+       "技能"
+      ],
+      "effect_element": "毒",
+      "effect_branch": "毒弹",
+      "need_t3": true
+     },
+     {
+      "name": "连续刃环",
+      "prereq": [
+       [
+        "技能毒环"
+       ]
+      ],
+      "pos": [
+       "技能"
+      ],
+      "effect_element": "刃",
+      "effect_branch": "刃环",
+      "need_t3": true
+     }
+    ]
+   },
+   {
+    "name": "史莱姆",
+    "t1": [
+     "召唤史莱姆"
+    ],
+    "t2": [
+     "自爆史莱姆",
+     "长效史莱姆"
+    ],
+    "t3": [
+     "大型史莱姆",
+     "极速史莱姆"
+    ],
+    "duals": [
+     {
+      "name": "分裂史莱姆",
+      "prereq": [
+       [
+        "火精灵助战"
+       ],
+       [
+        "召唤史莱姆"
+       ]
+      ],
+      "pos": [
+       "召唤"
+      ],
+      "effect_element": "毒",
+      "effect_branch": "史莱姆",
+      "need_t3": true
+     },
+     {
+      "name": "附身史莱姆",
+      "prereq": [
+       [
+        "圣光标记"
+       ],
+       [
+        "召唤史莱姆"
+       ]
+      ],
+      "pos": [
+       "召唤"
+      ],
+      "effect_element": "毒",
+      "effect_branch": "史莱姆",
+      "need_t3": true
+     },
+     {
+      "name": "毒液史莱姆",
+      "prereq": [
+       [
+        "传承技毒液",
+        "技能毒液"
+       ],
+       [
+        "召唤史莱姆"
+       ]
+      ],
+      "pos": [
+       "召唤"
+      ],
+      "effect_element": "毒",
+      "effect_branch": "史莱姆",
+      "need_t3": true
+     },
+     {
+      "name": "剧毒史莱姆",
+      "prereq": [
+       [
+        "召唤史莱姆"
+       ]
+      ],
+      "pos": [
+       "召唤"
+      ],
+      "effect_element": "毒",
+      "effect_branch": "中毒",
+      "need_t3": true
+     }
+    ]
+   },
+   {
+    "name": "毒弹",
+    "t1": [
+     "冲刺毒弹"
+    ],
+    "t2": [
+     "烈性毒弹",
+     "闪避毒弹",
+     "浓缩毒弹"
+    ],
+    "t3": [
+     "扩散毒弹"
+    ],
+    "duals": [
+     {
+      "name": "分裂毒弹",
+      "prereq": [
+       [
+        "火精灵助战"
+       ],
+       [
+        "冲刺毒弹"
+       ]
+      ],
+      "pos": [
+       "冲刺"
+      ],
+      "effect_element": "毒",
+      "effect_branch": "毒弹",
+      "need_t3": true
+     },
+     {
+      "name": "毒液残留",
+      "prereq": [
+       [
+        "冲刺毒弹"
+       ]
+      ],
+      "pos": [
+       "冲刺"
+      ],
+      "effect_element": "毒",
+      "effect_branch": "毒液",
+      "need_t3": true
+     }
+    ]
+   },
+   {
+    "name": "毒液",
+    "t1": [
+     "传承技毒液",
+     "技能毒液"
+    ],
+    "t2": [
+     "长效毒液",
+     "毒液扩大",
+     "烈性毒液"
+    ],
+    "t3": [
+     "毒素累积"
+    ],
+    "duals": [
+     {
+      "name": "毒液催化",
+      "prereq": [
+       [
+        "传承技毒液",
+        "技能毒液"
+       ],
+       [
+        "普攻淬毒"
+       ]
+      ],
+      "pos": [
+       "传承",
+       "技能"
+      ],
+      "effect_element": "毒",
+      "effect_branch": "中毒",
+      "need_t3": true
+     },
+     {
+      "name": "泡状毒液",
+      "prereq": [
+       [
+        "技能毒液",
+        "传承技毒液"
+       ]
+      ],
+      "pos": [
+       "技能"
+      ],
+      "effect_element": "毒",
+      "effect_branch": "毒泡河豚",
+      "need_t3": true
+     }
+    ]
+   },
+   {
+    "name": "毒泡河豚",
+    "t1": [
+     "传承技河豚"
+    ],
+    "t2": [
+     "毒泡久喷",
+     "毒泡延距",
+     "大型毒泡"
+    ],
+    "t3": [
+     "河豚延续"
+    ],
+    "duals": [
+     {
+      "name": "燃气毒泡",
+      "prereq": [
+       [
+        "技能燃烧",
+        "普攻燃烧",
+        "冲刺燃烧"
+       ],
+       [
+        "传承技河豚"
+       ]
+      ],
+      "pos": [
+       "传承"
+      ],
+      "effect_element": "毒",
+      "effect_branch": "毒泡河豚",
+      "need_t3": true
+     },
+     {
+      "name": "河豚毒弹",
+      "prereq": [
+       [
+        "传承技河豚"
+       ]
+      ],
+      "pos": [
+       "传承"
+      ],
+      "effect_element": "毒",
+      "effect_branch": "毒弹",
+      "need_t3": true
+     }
+    ]
+   }
+  ]
+ },
+ "暗": {
+  "branches": [
+   {
+    "name": "触手",
+    "t1": [
+     "召唤触手"
+    ],
+    "t2": [
+     "大型触手",
+     "速攻触手",
+     "触手集群"
+    ],
+    "t3": [
+     "连击触手"
+    ],
+    "duals": [
+     {
+      "name": "暴躁触手",
+      "prereq": [
+       [
+        "召唤触手"
+       ]
+      ],
+      "pos": [
+       "召唤"
+      ],
+      "effect_element": "暗",
+      "effect_branch": "触手",
+      "need_t3": true
+     },
+     {
+      "name": "触手吞噬",
+      "prereq": [
+       [
+        "传承技闪光"
+       ],
+       [
+        "召唤触手"
+       ]
+      ],
+      "pos": [
+       "召唤"
+      ],
+      "effect_element": "暗",
+      "effect_branch": "触手",
+      "need_t3": true
+     },
+     {
+      "name": "触手闪电",
+      "prereq": [
+       [
+        "召唤触手"
+       ]
+      ],
+      "pos": [
+       "召唤"
+      ],
+      "effect_element": "电",
+      "effect_branch": "闪电链",
+      "need_t3": true
+     },
+     {
+      "name": "触手坍缩",
+      "prereq": [
+       [
+        "召唤触手"
+       ]
+      ],
+      "pos": [
+       "召唤"
+      ],
+      "effect_element": "暗",
+      "effect_branch": "黑洞",
+      "need_t3": true
+     }
+    ]
+   },
+   {
+    "name": "影子",
+    "t1": [
+     "冲刺影子"
+    ],
+    "t2": [
+     "影子反冲",
+     "影子强化",
+     "闪避影子"
+    ],
+    "t3": [
+     "多重影子"
+    ],
+    "duals": [
+     {
+      "name": "影刃冲刺",
+      "prereq": [
+       [
+        "召唤刃环"
+       ],
+       [
+        "冲刺影子"
+       ]
+      ],
+      "pos": [
+       "冲刺"
+      ],
+      "effect_element": "暗",
+      "effect_branch": "影子",
+      "need_t3": true
+     },
+     {
+      "name": "概率影爆",
+      "prereq": [
+       [
+        "传承技黑洞"
+       ],
+       [
+        "冲刺影子"
+       ]
+      ],
+      "pos": [
+       "冲刺"
+      ],
+      "effect_element": "暗",
+      "effect_branch": "影子",
+      "need_t3": true
+     },
+     {
+      "name": "影子冰刺",
+      "prereq": [
+       [
+        "冲刺影子"
+       ],
+       [
+        "召唤冰刺"
+       ]
+      ],
+      "pos": [
+       "冲刺"
+      ],
+      "effect_element": "暗",
+      "effect_branch": "影子",
+      "need_t3": true
+     },
+     {
+      "name": "影子穿刺",
+      "prereq": [
+       [
+        "冲刺影子"
+       ]
+      ],
+      "pos": [
+       "冲刺"
+      ],
+      "effect_element": "暗",
+      "effect_branch": "影刺",
+      "need_t3": true
+     }
+    ]
+   },
+   {
+    "name": "影刺",
+    "t1": [
+     "普攻影刺",
+     "技能影刺"
+    ],
+    "t2": [
+     "远程影刺",
+     "死亡影刺",
+     "受击影刺"
+    ],
+    "t3": [
+     "影刺强化"
+    ],
+    "duals": [
+     {
+      "name": "影子转化",
+      "prereq": [
+       [
+        "放置地雷"
+       ],
+       [
+        "普攻影刺",
+        "技能影刺"
+       ]
+      ],
+      "pos": [
+       "普攻",
+       "技能"
+      ],
+      "effect_element": "暗",
+      "effect_branch": "影刺",
+      "need_t3": true
+     },
+     {
+      "name": "落雷惩戒",
+      "prereq": [
+       [
+        "普攻影刺",
+        "技能影刺"
+       ]
+      ],
+      "pos": [
+       "普攻",
+       "技能"
+      ],
+      "effect_element": "电",
+      "effect_branch": "落雷",
+      "need_t3": true
+     },
+     {
+      "name": "影刺吸附",
+      "prereq": [
+       [
+        "普攻影刺",
+        "技能影刺"
+       ]
+      ],
+      "pos": [
+       "普攻",
+       "技能"
+      ],
+      "effect_element": "暗",
+      "effect_branch": "黑洞",
+      "need_t3": true
+     },
+     {
+      "name": "针对影刺",
+      "prereq": [
+       [
+        "普攻影刺",
+        "技能影刺"
+       ],
+       [
+        "普攻撕裂"
+       ]
+      ],
+      "pos": [
+       "普攻",
+       "技能"
+      ],
+      "effect_element": "刃",
+      "effect_branch": "撕裂",
+      "need_t3": true
+     }
+    ]
+   },
+   {
+    "name": "黑洞",
+    "t1": [
+     "传承技黑洞"
+    ],
+    "t2": [
+     "大型黑洞",
+     "黑洞爆炸",
+     "持久黑洞"
+    ],
+    "t3": [
+     "黑洞盛宴"
+    ],
+    "duals": [
+     {
+      "name": "黑洞减速",
+      "prereq": [
+       [
+        "聚寒成冰"
+       ],
+       [
+        "传承技黑洞"
+       ]
+      ],
+      "pos": [
+       "传承"
+      ],
+      "effect_element": "暗",
+      "effect_branch": "黑洞",
+      "need_t3": true
+     },
+     {
+      "name": "活性黑洞",
+      "prereq": [
+       [
+        "召唤史莱姆"
+       ],
+       [
+        "传承技黑洞"
+       ]
+      ],
+      "pos": [
+       "传承"
+      ],
+      "effect_element": "暗",
+      "effect_branch": "黑洞",
+      "need_t3": true
+     },
+     {
+      "name": "黑洞脉冲",
+      "prereq": [
+       [
+        "传承技黑洞"
+       ]
+      ],
+      "pos": [
+       "传承"
+      ],
+      "effect_element": "电",
+      "effect_branch": "感电",
+      "need_t3": true
+     },
+     {
+      "name": "黑洞链接",
+      "prereq": [
+       [
+        "传承技黑洞"
+       ]
+      ],
+      "pos": [
+       "传承"
+      ],
+      "effect_element": "暗",
+      "effect_branch": "暗影标记",
+      "need_t3": true
+     },
+     {
+      "name": "黑洞刀刃",
+      "prereq": [
+       [
+        "传承技黑洞"
+       ]
+      ],
+      "pos": [
+       "传承"
+      ],
+      "effect_element": "刃",
+      "effect_branch": "刀刃风暴",
+      "need_t3": true
+     }
+    ]
+   },
+   {
+    "name": "暗影标记",
+    "t1": [
+     "普攻影标",
+     "技能影标"
+    ],
+    "t2": [
+     "影标解限",
+     "影标增殖",
+     "影标连爆"
+    ],
+    "t3": [
+     "强链影标"
+    ],
+    "duals": [
+     {
+      "name": "影链牵引",
+      "prereq": [
+       [
+        "普攻影标",
+        "技能影标"
+       ]
+      ],
+      "pos": [
+       "普攻",
+       "技能"
+      ],
+      "effect_element": "暗",
+      "effect_branch": "触手",
+      "need_t3": true
+     },
+     {
+      "name": "影链致盲",
+      "prereq": [
+       [
+        "普攻影标",
+        "技能影标"
+       ]
+      ],
+      "pos": [
+       "普攻",
+       "技能"
+      ],
+      "effect_element": "光",
+      "effect_branch": "闪光",
+      "need_t3": true
+     }
+    ]
+   }
+  ]
+ },
+ "光": {
+  "branches": [
+   {
+    "name": "光枪",
+    "t1": [
+     "传承技光枪",
+     "技能光枪"
+    ],
+    "t2": [
+     "圣光光枪",
+     "光枪禁锢",
+     "光枪强化"
+    ],
+    "t3": [
+     "多重光枪"
+    ],
+    "duals": [
+     {
+      "name": "光枪冰锥",
+      "prereq": [
+       [
+        "传承技光枪",
+        "技能光枪"
+       ]
+      ],
+      "pos": [
+       "传承",
+       "技能"
+      ],
+      "effect_element": "冰",
+      "effect_branch": "冰锥",
+      "need_t3": true
+     },
+     {
+      "name": "光枪落雷",
+      "prereq": [
+       [
+        "传承技光枪",
+        "技能光枪"
+       ]
+      ],
+      "pos": [
+       "传承",
+       "技能"
+      ],
+      "effect_element": "电",
+      "effect_branch": "落雷",
+      "need_t3": true
+     },
+     {
+      "name": "光枪闪光",
+      "prereq": [
+       [
+        "技能光枪",
+        "传承技光枪"
+       ]
+      ],
+      "pos": [
+       "技能"
+      ],
+      "effect_element": "光",
+      "effect_branch": "闪光",
+      "need_t3": true
+     },
+     {
+      "name": "光枪光波",
+      "prereq": [
+       [
+        "传承技光枪",
+        "技能光枪"
+       ]
+      ],
+      "pos": [
+       "传承",
+       "技能"
+      ],
+      "effect_element": "光",
+      "effect_branch": "光波",
+      "need_t3": true
+     }
+    ]
+   },
+   {
+    "name": "闪光",
+    "t1": [
+     "传承技闪光"
+    ],
+    "t2": [
+     "闪光强化",
+     "大范围闪光",
+     "受击闪光"
+    ],
+    "t3": [
+     "致盲延长"
+    ],
+    "duals": [
+     {
+      "name": "闪光光枪",
+      "prereq": [
+       [
+        "传承技闪光"
+       ]
+      ],
+      "pos": [
+       "传承"
+      ],
+      "effect_element": "光",
+      "effect_branch": "光枪",
+      "need_t3": true
+     },
+     {
+      "name": "持久光阵",
+      "prereq": [
+       [
+        "传承技闪光"
+       ],
+       [
+        "召唤光阵"
+       ]
+      ],
+      "pos": [
+       "传承"
+      ],
+      "effect_element": "光",
+      "effect_branch": "光阵",
+      "need_t3": true
+     }
+    ]
+   },
+   {
+    "name": "光波",
+    "t1": [
+     "普攻光波"
+    ],
+    "t2": [
+     "光波强化",
+     "光波眩晕",
+     "灵活充能"
+    ],
+    "t3": [
+     "增强光波"
+    ],
+    "duals": [
+     {
+      "name": "光波传递",
+      "prereq": [
+       [
+        "电闪雷鸣",
+        "技能闪电"
+       ],
+       [
+        "普攻光波"
+       ]
+      ],
+      "pos": [
+       "普攻"
+      ],
+      "effect_element": "光",
+      "effect_branch": "光波",
+      "need_t3": true
+     },
+     {
+      "name": "光波快充",
+      "prereq": [
+       [
+        "召唤光阵"
+       ],
+       [
+        "普攻光波"
+       ]
+      ],
+      "pos": [
+       "普攻"
+      ],
+      "effect_element": "光",
+      "effect_branch": "光波",
+      "need_t3": true
+     },
+     {
+      "name": "至圣标记",
+      "prereq": [
+       [
+        "普攻光波"
+       ],
+       [
+        "圣光标记"
+       ]
+      ],
+      "pos": [
+       "普攻"
+      ],
+      "effect_element": "光",
+      "effect_branch": "圣光标记",
+      "need_t3": true
+     }
+    ]
+   },
+   {
+    "name": "光阵",
+    "t1": [
+     "召唤光阵"
+    ],
+    "t2": [
+     "光阵致盲",
+     "光阵庇护",
+     "光阵增幅"
+    ],
+    "t3": [
+     "大型光阵"
+    ],
+    "duals": [
+     {
+      "name": "光阵吸引",
+      "prereq": [
+       [
+        "传承技黑洞"
+       ],
+       [
+        "召唤光阵"
+       ]
+      ],
+      "pos": [
+       "召唤"
+      ],
+      "effect_element": "光",
+      "effect_branch": "光阵",
+      "need_t3": true
+     },
+     {
+      "name": "光阵电桩",
+      "prereq": [
+       [
+        "召唤光阵"
+       ]
+      ],
+      "pos": [
+       "召唤"
+      ],
+      "effect_element": "电",
+      "effect_branch": "电桩",
+      "need_t3": true
+     },
+     {
+      "name": "标记光阵",
+      "prereq": [
+       [
+        "召唤光阵"
+       ]
+      ],
+      "pos": [
+       "召唤"
+      ],
+      "effect_element": "光",
+      "effect_branch": "圣光标记",
+      "need_t3": true
+     }
+    ]
+   },
+   {
+    "name": "圣光标记",
+    "t1": [
+     "圣光标记"
+    ],
+    "t2": [
+     "稳定标记",
+     "标记强化",
+     "随机标记"
+    ],
+    "t3": [
+     "标记共鸣"
+    ],
+    "duals": [
+     {
+      "name": "光爆玄冰",
+      "prereq": [
+       [
+        "圣光标记"
+       ],
+       [
+        "玄冰剑刃"
+       ]
+      ],
+      "pos": [
+       "冲刺"
+      ],
+      "effect_element": "冰",
+      "effect_branch": "冰剑",
+      "need_t3": true
+     },
+     {
+      "name": "标记闪光",
+      "prereq": [
+       [
+        "圣光标记"
+       ]
+      ],
+      "pos": [
+       "冲刺"
+      ],
+      "effect_element": "光",
+      "effect_branch": "闪光",
+      "need_t3": true
+     }
+    ]
+   }
+  ]
+ },
+ "刃": {
+  "branches": [
+   {
+    "name": "飞剑",
+    "t1": [
+     "冲刺飞剑"
+    ],
+    "t2": [
+     "长距飞剑",
+     "染血飞剑",
+     "闪避飞剑"
+    ],
+    "t3": [
+     "多重飞剑"
+    ],
+    "duals": [
+     {
+      "name": "嗜血飞剑",
+      "prereq": [
+       [
+        "普攻撕裂",
+        "技能撕裂"
+       ],
+       [
+        "冲刺飞剑"
+       ]
+      ],
+      "pos": [
+       "冲刺"
+      ],
+      "effect_element": "刃",
+      "effect_branch": "飞剑",
+      "need_t3": true
+     },
+     {
+      "name": "双向飞剑",
+      "prereq": [
+       [
+        "冲刺飞剑"
+       ]
+      ],
+      "pos": [
+       "冲刺"
+      ],
+      "effect_element": "刃",
+      "effect_branch": "飞剑",
+      "need_t3": true
+     },
+     {
+      "name": "火焰飞剑",
+      "prereq": [
+       [
+        "冲刺飞剑"
+       ]
+      ],
+      "pos": [
+       "冲刺"
+      ],
+      "effect_element": "火",
+      "effect_branch": "燃烧",
+      "need_t3": true
+     }
+    ]
+   },
+   {
+    "name": "撕裂",
+    "t1": [
+     "普攻撕裂",
+     "技能撕裂"
+    ],
+    "t2": [
+     "短距撕裂",
+     "撕裂加深",
+     "撕裂冲击"
+    ],
+    "t3": [
+     "致命撕裂"
+    ],
+    "duals": [
+     {
+      "name": "撕裂光阵",
+      "prereq": [
+       [
+        "召唤光阵"
+       ],
+       [
+        "普攻撕裂",
+        "技能撕裂"
+       ]
+      ],
+      "pos": [
+       "普攻",
+       "技能"
+      ],
+      "effect_element": "刃",
+      "effect_branch": "撕裂",
+      "need_t3": true
+     },
+     {
+      "name": "斩杀风暴",
+      "prereq": [
+       [
+        "传承技风暴",
+        "技能风暴"
+       ],
+       [
+        "普攻撕裂",
+        "技能撕裂"
+       ],
+       [
+        "致命撕裂"
+       ]
+      ],
+      "pos": [
+       "普攻",
+       "技能"
+      ],
+      "effect_element": "刃",
+      "effect_branch": "撕裂",
+      "need_t3": true
+     }
+    ]
+   },
+   {
+    "name": "刃环",
+    "t1": [
+     "召唤刃环"
+    ],
+    "t2": [
+     "精密切割",
+     "大号刃环",
+     "刃环拉扯",
+     "受击刃环"
+    ],
+    "t3": [
+     "双生刃环"
+    ],
+    "duals": [
+     {
+      "name": "召唤回旋刃",
+      "prereq": [
+       [
+        "冲刺飞剑"
+       ],
+       [
+        "召唤刃环"
+       ]
+      ],
+      "pos": [
+       "召唤"
+      ],
+      "effect_element": "刃",
+      "effect_branch": "刃环",
+      "need_t3": true
+     },
+     {
+      "name": "嗜血刃环",
+      "prereq": [
+       [
+        "普攻撕裂",
+        "技能撕裂"
+       ],
+       [
+        "召唤刃环"
+       ]
+      ],
+      "pos": [
+       "召唤"
+      ],
+      "effect_element": "刃",
+      "effect_branch": "刃环",
+      "need_t3": true
+     }
+    ]
+   },
+   {
+    "name": "刀刃风暴",
+    "t1": [
+     "传承技风暴",
+     "技能风暴"
+    ],
+    "t2": [
+     "风暴拉扯",
+     "风暴扩大",
+     "风暴追踪",
+     "受击风暴"
+    ],
+    "t3": [
+     "风暴加速"
+    ],
+    "duals": [
+     {
+      "name": "嗜血风暴",
+      "prereq": [
+       [
+        "普攻撕裂",
+        "技能撕裂"
+       ],
+       [
+        "传承技风暴",
+        "技能风暴"
+       ]
+      ],
+      "pos": [
+       "传承",
+       "技能"
+      ],
+      "effect_element": "刃",
+      "effect_branch": "刀刃风暴",
+      "need_t3": true
+     },
+     {
+      "name": "风暴火环",
+      "prereq": [
+       [
+        "传承技风暴",
+        "技能风暴"
+       ]
+      ],
+      "pos": [
+       "技能"
+      ],
+      "effect_element": "火",
+      "effect_branch": "火环",
+      "need_t3": true
+     }
+    ]
+   },
+   {
+    "name": "飞刃",
+    "t1": [
+     "普攻飞刃"
+    ],
+    "t2": [
+     "潜伏飞刃",
+     "飞刃轮舞",
+     "飞刃冲击"
+    ],
+    "t3": [
+     "飞刃切割"
+    ],
+    "duals": [
+     {
+      "name": "传送飞刃",
+      "prereq": [
+       [
+        "普攻飞刃"
+       ]
+      ],
+      "pos": [
+       "普攻"
+      ],
+      "effect_element": "刃",
+      "effect_branch": "飞刃",
+      "need_t3": true
+     },
+     {
+      "name": "飞刃脉冲",
+      "prereq": [
+       [
+        "普攻飞刃"
+       ]
+      ],
+      "pos": [
+       "普攻"
+      ],
+      "effect_element": "电",
+      "effect_branch": "感电",
+      "need_t3": true
+     },
+     {
+      "name": "影刃回收",
+      "prereq": [
+       [
+        "普攻飞刃"
+       ]
+      ],
+      "pos": [
+       "普攻"
+      ],
+      "effect_element": "暗",
+      "effect_branch": "影子",
+      "need_t3": true
+     },
+     {
+      "name": "飞刃回环",
+      "prereq": [
+       [
+        "普攻飞刃"
+       ]
+      ],
+      "pos": [
+       "普攻"
+      ],
+      "effect_element": "刃",
+      "effect_branch": "刃环",
+      "need_t3": true
+     }
+    ]
+   }
+  ]
+ }
+}

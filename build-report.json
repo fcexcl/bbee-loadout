@@ -1,0 +1,41 @@
+{
+  "appVersion": "1.1.0",
+  "dataVersion": "2026-10-24",
+  "cardsSha256": "3f04ef09bdaeb53213c62b6996a4013f6738989ff802c50fb7dd98b1884c932d",
+  "cards": {
+    "total": 297,
+    "t1": 51,
+    "t2": 109,
+    "t3": 37,
+    "dual": 100
+  },
+  "icons": {
+    "count": 297,
+    "bytes": 1156482,
+    "maxBytes": 4770,
+    "maxWidth": 256,
+    "maxHeight": 256,
+    "minWidth": 256,
+    "minHeight": 256
+  },
+  "artifacts": {
+    "js/data.js": {
+      "bytes": 109999,
+      "sha256": "d29590192fc83354c44be4ee4c6741d61ce0fe78b0f139ce5e2d7845dfda6432"
+    }
+  },
+  "checks": [
+    "expected-counts",
+    "unique-ids",
+    "t1-trigger",
+    "prereq-names",
+    "pos-rows",
+    "effect-branch",
+    "media-coverage",
+    "icon-coverage",
+    "icon-format",
+    "icon-budget",
+    "canonical-hash",
+    "forbidden-scan"
+  ]
+}

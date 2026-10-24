@@ -1,0 +1,17 @@
+{
+  "name": "bbee-sim-web",
+  "version": "1.1.0",
+  "private": true,
+  "description": "苍翼混沌效应 · 策略搭配器（静态网页版，非官方）",
+  "license": "MIT",
+  "scripts": {
+    "build": "node tools/build.mjs",
+    "build:check": "node tools/build.mjs --check",
+    "serve": "node tools/serve.mjs",
+    "test": "node --test",
+    "verify": "node tools/verify.mjs"
+  },
+  "engines": {
+    "node": ">=20"
+  }
+}

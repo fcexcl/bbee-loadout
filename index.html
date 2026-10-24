@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>苍翼混沌效应 · 策略搭配器</title>
+<meta name="description" content="不开游戏也能按游戏规则搭配策略：校验分支互斥、进阶链、双重前置与触发位。非官方工具。">
+<meta name="theme-color" content="#0b0e13">
+<link rel="icon" href="assets/favicon-32.png">
+<link rel="apple-touch-icon" href="assets/app-192.png">
+<link rel="manifest" href="manifest.webmanifest">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div id="narrow-hint" role="status">本工具按桌面宽屏设计（窗口宽度 ≥1280px），请用电脑浏览器打开。</div>
+
+<div id="stage">
+  <header>
+    <span>触发方式 · 策略搭配</span>
+    <span class="stat">已选 <b id="cnt">0</b> 张 <span class="hint">（格数不限）</span></span>
+    <span class="badge" id="ver"></span>
+  </header>
+
+  <div class="rows" id="rows"></div>
+
+  <div id="boot-error" style="display:none; grid-column:1/-1; padding:26px 34px; line-height:2; font-size:14px">
+    <div style="color:#ffb3ba; font-size:16px; font-weight:700; margin-bottom:10px">⚠ 页面没能加载数据</div>
+    <div style="color:#cfd6e0">
+      请确认 <code>index.html</code>、<code>js/</code>、<code>icons/</code> 来自同一份完整文件，然后刷新页面。<br>
+      如果只拷贝了 HTML 文件，请改用完整目录或在线版本。
+    </div>
+  </div>
+
+  <aside class="panel">
+    <div class="phead"><span id="selTitle">点一个格子开始</span><small id="selSub">左键格子 → 右侧列出可选项（不可选的会写清原因）</small></div>
+    <div class="pbody" id="pbody"></div>
+    <button class="btn" id="btnClear" style="display:none">移除这个格子里的策略</button>
+    <div class="builds">
+      <div class="bh"><span>构筑存档</span><span class="bmsg" id="buildMsg"></span></div>
+      <div class="bin">
+        <input id="buildName" placeholder="名称（可空）" maxlength="24">
+        <button class="btn mini" id="btnSave" type="button">保存当前</button>
+      </div>
+      <div class="blist" id="buildList"></div>
+    </div>
+    <div class="vio"><h4>冲突</h4><div id="vio"><span class="none">暂无冲突</span></div></div>
+    <div class="vio"><h4>提示（触发位）</h4><div id="warn"><span class="none">—</span></div></div>
+  </aside>
+</div>
+
+<script src="js/data.js"></script>
+<script src="js/rules.js"></script>
+<script src="js/app.js"></script>
+</body>
+</html>
