@@ -95,7 +95,7 @@ tools/      build.mjs verify.mjs serve.mjs make_icons.py make_app_icons.py
 
 1. 改 `data/strategies.json` 或 `data/media.json`；
 2. `node tools/build.mjs --write-meta` 更新规范哈希并重新生成 `js/data.js`；
-3. 用 Python 参考实现重新生成 `tests/fixtures/parity.json`（见文件头注释），否则对拍测试会失败；
+3. 用 Python 参考实现重新生成 `tests/fixtures/parity.json`（说明见 `tests/fixtures/README.md`），否则对拍测试会失败；
 4. `npm run verify`，全绿再提交。
 
 `tests/fixtures/parity.json` 是从参考实现生成的黄金向量（915 组校验 + 150 组候选），用来保证 JS 移植与参考实现逐条一致。改动规则时必须重新生成，不能手改。
