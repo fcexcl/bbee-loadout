@@ -179,6 +179,16 @@ check('运行时无外部网络依赖', () => {
   return '6 个运行时文件';
 });
 
+check('运行时无后端 / 网络请求', () => {
+  for (const f of ['js/app.js', 'js/rules.js', 'js/data.js']) {
+    const text = readFileSync(join(ROOT, f), 'utf8');
+    must(!/\bfetch\s*\(|XMLHttpRequest|new\s+WebSocket/.test(text), `${f} 含网络请求代码`);
+  }
+  const css = readFileSync(join(ROOT, 'style.css'), 'utf8');
+  must(!/url\(\s*['"]?https?:/i.test(css), 'style.css 引用了外部资源');
+  return '3 个 JS + CSS';
+});
+
 check('黄金构筑 0 冲突', () => {
   const builds = readJson(join(ROOT, 'tests', 'fixtures', 'builds-golden.json'));
   const rules = require(join(ROOT, 'js', 'rules.js'));
