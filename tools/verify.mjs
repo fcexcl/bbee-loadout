@@ -213,7 +213,7 @@ check('体积预算', () => {
 });
 
 check('Node 测试全过', () => {
-  const r = spawnSync(process.execPath, ['--test'], { cwd: ROOT, encoding: 'utf8' });
+  const r = spawnSync(process.execPath, ['--test', '--test-reporter=spec'], { cwd: ROOT, encoding: 'utf8' });
   const out = (r.stdout || '') + (r.stderr || '');
   if (r.status !== 0) throw new Error(out.split('\n').filter((x) => /^(✖|ℹ fail)/.test(x)).slice(0, 4).join(' | '));
   const pass = /ℹ pass (\d+)/.exec(out);
