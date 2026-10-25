@@ -13,6 +13,8 @@
 
 ### 在线版（推荐）
 
+[打开在线版](https://fcexcl.github.io/bbee-loadout/)
+
 仓库部署到 GitHub Pages 后，从仓库 **Settings → Pages** 取得访问地址。
 用 Edge / Chrome 打开后，地址栏右侧「安装」可把它装成独立窗口（无地址栏，可固定到任务栏）。
 
